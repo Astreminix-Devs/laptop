@@ -87,7 +87,7 @@ client10.on('ready', () => {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
     
-client1.on("message", async message => {
+client.on("message", async message => {
 
   if (message.author.bot) return;
   if (message.channel.type === "dm") return;
