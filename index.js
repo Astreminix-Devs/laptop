@@ -10,6 +10,13 @@ const client7 = new Discord.Client();
 const client8 = new Discord.Client();
 const client9 = new Discord.Client();
 const client10 = new Discord.Client();
+const client11 = new Discord.Client();
+const client12 = new Discord.Client();
+const client13 = new Discord.Client();
+const client16 = new Discord.Client();
+const client17 = new Discord.Client();
+const client18 = new Discord.Client();
+const client19 = new Discord.Client();
 
 client.on('ready', () => {
     
@@ -78,6 +85,55 @@ client10.on('ready', () => {
     
         console.log(`Logged in as ${client10.user.username}, ready to get this bread.`);
         client10.user.setActivity('Testing stuff');
+    
+    });
+	
+client11.on('ready', () => {
+    
+        console.log(`Logged in as ${client11.user.username}, ready to get this bread.`);
+        client11.user.setActivity('Testing stuff');
+    
+    });
+		
+client12.on('ready', () => {
+    
+        console.log(`Logged in as ${client12.user.username}, ready to get this bread.`);
+        client12.user.setActivity('Testing stuff');
+    
+    });
+	
+client13.on('ready', () => {
+    
+        console.log(`Logged in as ${client13.user.username}, ready to get this bread.`);
+        client13.user.setActivity('Testing stuff');
+    
+    });
+	
+client16.on('ready', () => {
+    
+        console.log(`Logged in as ${client16.user.username}, ready to get this bread.`);
+        client16.user.setActivity('Testing stuff');
+    
+    });
+	
+client17.on('ready', () => {
+    
+        console.log(`Logged in as ${client17.user.username}, ready to get this bread.`);
+        client17.user.setActivity('Testing stuff');
+    
+    });
+	
+client18.on('ready', () => {
+    
+        console.log(`Logged in as ${client18.user.username}, ready to get this bread.`);
+        client18.user.setActivity('Testing stuff');
+    
+    });
+	
+client19.on('ready', () => {
+    
+        console.log(`Logged in as ${client19.user.username}, ready to get this bread.`);
+        client19.user.setActivity('Testing stuff');
     
     });
 	
@@ -267,6 +323,149 @@ await sleep(900000)
 }
 });
 
+client.on("message", async message => {
+
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}laptop1`){
+for (var i = 0; i < 10000000000000000; i++) {
+message.channel.send('pls buy laptop')
+await sleep(900000)
+}
+}
+});
+
+client11.on("message", async message => {
+
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}laptop11`){
+for (var i = 0; i < 10000000000000000; i++) {
+message.channel.send('pls buy laptop')
+await sleep(900000)
+}
+}
+});
+
+client12.on("message", async message => {
+
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}laptop12`){
+for (var i = 0; i < 10000000000000000; i++) {
+message.channel.send('pls buy laptop')
+await sleep(900000)
+}
+}
+});
+
+client13.on("message", async message => {
+
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}laptop13`){
+for (var i = 0; i < 10000000000000000; i++) {
+message.channel.send('pls buy laptop')
+await sleep(900000)
+}
+}
+});
+
+client13.on("message", async message => {
+
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}laptop13`){
+for (var i = 0; i < 10000000000000000; i++) {
+message.channel.send('pls buy laptop')
+await sleep(900000)
+}
+}
+});
+
+client17.on("message", async message => {
+
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}laptop17`){
+for (var i = 0; i < 10000000000000000; i++) {
+message.channel.send('pls buy laptop')
+await sleep(900000)
+}
+}
+});
+
+client18.on("message", async message => {
+
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}laptop18`){
+for (var i = 0; i < 10000000000000000; i++) {
+message.channel.send('pls buy laptop')
+await sleep(900000)
+}
+}
+});
+
+client19.on("message", async message => {
+
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}laptop19`){
+for (var i = 0; i < 10000000000000000; i++) {
+message.channel.send('pls buy laptop')
+await sleep(900000)
+}
+}
+});
 
 client.login(process.env.token)
 client2.login(process.env.token2)
@@ -278,3 +477,10 @@ client7.login(process.env.token7)
 client8.login(process.env.token8)
 client9.login(process.env.token9)
 client10.login(process.env.token10)
+client11.login(process.env.token11)
+client12.login(process.env.token12)
+client13.login(process.env.token13)
+client16.login(process.env.token16)
+client17.login(process.env.token17)
+client18.login(process.env.token18)
+client19.login(process.env.token19)
