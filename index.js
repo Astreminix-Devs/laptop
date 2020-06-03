@@ -141,8 +141,8 @@ client19.on('ready', () => {
 	
 client20.on('ready', () => {
     
-        console.log(`Logged in as ${client19.user.username}, ready to get this bread.`);
-        client19.user.setActivity('Testing stuff');
+        console.log(`Logged in as ${client20.user.username}, ready to get this bread.`);
+        client20.user.setActivity('Testing stuff');
     
     });
 
