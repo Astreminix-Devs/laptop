@@ -13,6 +13,8 @@ const client10 = new Discord.Client();
 const client11 = new Discord.Client();
 const client12 = new Discord.Client();
 const client13 = new Discord.Client();
+const client14 = new Discord.Client();
+const client15 = new Discord.Client();
 const client16 = new Discord.Client();
 const client17 = new Discord.Client();
 const client18 = new Discord.Client();
@@ -108,6 +110,20 @@ client13.on('ready', () => {
     
         console.log(`Logged in as ${client13.user.username}, ready to get this bread.`);
         client13.user.setActivity('Testing stuff');
+    
+    });
+
+client14.on('ready', () => {
+    
+        console.log(`Logged in as ${client14.user.username}, ready to get this bread.`);
+        client14.user.setActivity('Testing stuff');
+    
+    });
+    
+client15.on('ready', () => {
+    
+        console.log(`Logged in as ${client15.user.username}, ready to get this bread.`);
+        client15.user.setActivity('Testing stuff');
     
     });
 	
@@ -392,6 +408,42 @@ await sleep(900000)
 }
 }
 });
+
+client14.on("message", async message => {
+
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}laptop14`){
+for (var i = 0; i < 10000000000000000; i++) {
+message.channel.send('pls buy laptop')
+await sleep(900000)
+}
+}
+});
+
+client15.on("message", async message => {
+
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}laptop15`){
+for (var i = 0; i < 10000000000000000; i++) {
+message.channel.send('pls buy laptop')
+await sleep(900000)
+}
+}
+});
 	
 client16.on("message", async message => {
 
@@ -514,6 +566,8 @@ client10.login(process.env.token10)
 client11.login(process.env.token11)
 client12.login(process.env.token12)
 client13.login(process.env.token13)
+client14.login(process.env.token12)
+client15.login(process.env.token13)
 client16.login(process.env.token16)
 client17.login(process.env.token17)
 client18.login(process.env.token18)
