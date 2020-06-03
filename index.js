@@ -17,6 +17,8 @@ const client16 = new Discord.Client();
 const client17 = new Discord.Client();
 const client18 = new Discord.Client();
 const client19 = new Discord.Client();
+const client20 = new Discord.Client();
+const client31 = new Discord.Client();
 
 client.on('ready', () => {
     
@@ -87,21 +89,21 @@ client10.on('ready', () => {
         client10.user.setActivity('Testing stuff');
     
     });
-	
+
 client11.on('ready', () => {
     
         console.log(`Logged in as ${client11.user.username}, ready to get this bread.`);
         client11.user.setActivity('Testing stuff');
     
     });
-		
+    
 client12.on('ready', () => {
     
         console.log(`Logged in as ${client12.user.username}, ready to get this bread.`);
         client12.user.setActivity('Testing stuff');
     
     });
-	
+    
 client13.on('ready', () => {
     
         console.log(`Logged in as ${client13.user.username}, ready to get this bread.`);
@@ -115,7 +117,7 @@ client16.on('ready', () => {
         client16.user.setActivity('Testing stuff');
     
     });
-	
+		
 client17.on('ready', () => {
     
         console.log(`Logged in as ${client17.user.username}, ready to get this bread.`);
@@ -137,6 +139,20 @@ client19.on('ready', () => {
     
     });
 	
+client20.on('ready', () => {
+    
+        console.log(`Logged in as ${client19.user.username}, ready to get this bread.`);
+        client19.user.setActivity('Testing stuff');
+    
+    });
+
+client31.on('ready', () => {
+    
+        console.log(`Logged in as ${client31.user.username}, ready to get this bread.`);
+        client31.user.setActivity('Testing stuff');
+    
+    });
+	
 
 
 	function sleep(ms) {
@@ -153,14 +169,14 @@ client.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop1`){
+  if (cmd === `${prefix}start`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
 }
 }
 });
-
+ 
 client2.on("message", async message => {
 
   if (message.author.bot) return;
@@ -171,7 +187,7 @@ client2.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop2`){
+  if (cmd === `${prefix}start2`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
@@ -189,14 +205,14 @@ client3.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop3`){
+  if (cmd === `${prefix}start3`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
 }
 }
 });
-
+	
 client4.on("message", async message => {
 
   if (message.author.bot) return;
@@ -207,14 +223,14 @@ client4.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop4`){
+  if (cmd === `${prefix}start4`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
 }
 }
 });
-
+ 
 client5.on("message", async message => {
 
   if (message.author.bot) return;
@@ -225,7 +241,7 @@ client5.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop5`){
+  if (cmd === `${prefix}start5`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
@@ -243,7 +259,7 @@ client6.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop6`){
+  if (cmd === `${prefix}start6`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
@@ -261,14 +277,14 @@ client7.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop7`){
+  if (cmd === `${prefix}start7`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
 }
 }
 });
-
+ 
 client8.on("message", async message => {
 
   if (message.author.bot) return;
@@ -279,7 +295,7 @@ client8.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop8`){
+  if (cmd === `${prefix}start8`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
@@ -297,7 +313,7 @@ client9.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop9`){
+  if (cmd === `${prefix}start9`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
@@ -315,25 +331,7 @@ client10.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop10`){
-for (var i = 0; i < 10000000000000000; i++) {
-message.channel.send('pls buy laptop')
-await sleep(900000)
-}
-}
-});
-
-client.on("message", async message => {
-
-  if (message.author.bot) return;
-  if (message.channel.type === "dm") return;
-
-  let prefix = '-';
-  let messageArray = message.content.split(" ");
-  let cmd = messageArray[0];
-  let args = messageArray.slice(1);
-
-  if (cmd === `${prefix}laptop1`){
+  if (cmd === `${prefix}start10`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
@@ -351,14 +349,14 @@ client11.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop11`){
+  if (cmd === `${prefix}start11`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
 }
 }
 });
-
+ 
 client12.on("message", async message => {
 
   if (message.author.bot) return;
@@ -369,7 +367,7 @@ client12.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop12`){
+  if (cmd === `${prefix}start12`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
@@ -387,15 +385,15 @@ client13.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop13`){
+  if (cmd === `${prefix}start13`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
 }
 }
 });
-
-client13.on("message", async message => {
+	
+client16.on("message", async message => {
 
   if (message.author.bot) return;
   if (message.channel.type === "dm") return;
@@ -405,14 +403,14 @@ client13.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop13`){
+  if (cmd === `${prefix}start16`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
 }
 }
 });
-
+ 
 client17.on("message", async message => {
 
   if (message.author.bot) return;
@@ -423,7 +421,7 @@ client17.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop17`){
+  if (cmd === `${prefix}start17`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
@@ -441,7 +439,7 @@ client18.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop18`){
+  if (cmd === `${prefix}start18`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
@@ -459,7 +457,43 @@ client19.on("message", async message => {
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
 
-  if (cmd === `${prefix}laptop19`){
+  if (cmd === `${prefix}start19`){
+for (var i = 0; i < 10000000000000000; i++) {
+message.channel.send('pls buy laptop')
+await sleep(900000)
+}
+}
+});
+ 
+client20.on("message", async message => {
+
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}start20`){
+for (var i = 0; i < 10000000000000000; i++) {
+message.channel.send('pls buy laptop')
+await sleep(900000)
+}
+}
+});
+
+client31.on("message", async message => {
+
+  if (message.author.bot) return;
+  if (message.channel.type === "dm") return;
+
+  let prefix = '-';
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+
+  if (cmd === `${prefix}start31`){
 for (var i = 0; i < 10000000000000000; i++) {
 message.channel.send('pls buy laptop')
 await sleep(900000)
@@ -484,3 +518,5 @@ client16.login(process.env.token16)
 client17.login(process.env.token17)
 client18.login(process.env.token18)
 client19.login(process.env.token19)
+client20.login(process.env.token20)
+client31.login(process.env.token31)
