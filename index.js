@@ -311,10 +311,10 @@ var channel = server.channels.get("717117305405833227")
 
 client21.on('ready', async () => {
 
-var server = client18.guilds.get("712773337864077382");
+var server = client21.guilds.get("712773337864077382");
 var channel = server.channels.get("717117376562200663")
 
-        console.log(`Logged in as ${client18.user.username}, ready to get this bread.`);
+        console.log(`Logged in as ${client21.user.username}, ready to get this bread.`);
         for (var i = 0; i < 1000000; i++) {
         channel.send('pls buy laptop')
         await sleep(900000)
@@ -325,10 +325,10 @@ var channel = server.channels.get("717117376562200663")
 
 client22.on('ready', async () => {
 
-var server = client19.guilds.get("712773337864077382");
+var server = client22.guilds.get("712773337864077382");
 var channel = server.channels.get("717117421898563634")
 
-        console.log(`Logged in as ${client19.user.username}, ready to get this bread.`);
+        console.log(`Logged in as ${client22.user.username}, ready to get this bread.`);
         for (var i = 0; i < 1000000; i++) {
        channel.send('pls buy laptop')
         await sleep(900000)
